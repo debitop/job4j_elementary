@@ -42,20 +42,20 @@ public class PointTest {
     }
 
     @Test
-    public void when123to456then4point24() {
-        double expected = 4.24;
+    public void when123to456then5point19() {
+        double expected = 5.19;
         Point a = new Point(1, 2, 3);
         Point b = new Point(4, 5, 6);
-        double out = a.distance(b);
+        double out = a.distance3d(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when246to642then4() {
-        double expected = 4.0;
+    public void when246to642then5point65() {
+        double expected = 5.65;
         Point a = new Point(2, 4, 6);
         Point b = new Point(6, 4, 2);
-        double out = a.distance(b);
+        double out = a.distance3d(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
