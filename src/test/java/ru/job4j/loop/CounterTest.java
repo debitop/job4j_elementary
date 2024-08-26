@@ -50,4 +50,13 @@ class CounterTest {
         int output = Counter.sum(start, finish);
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void whenSumEvenNumberFromOneToTenThenThirty() {
+        int start = 1;
+        int finish = 10;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 30;
+        assertThat(result).isEqualTo(expected);
+    }
 }
